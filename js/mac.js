@@ -122,7 +122,7 @@ document.getElementById('promo-apply').addEventListener('click', function () {
     const finalPriceValue = parseInt(finalPrice.innerText);
 
     if (promoInputValue == 'stevekaku') {
-        finalPrice.innerText = Math.round(finalPriceValue - (finalPriceValue * 0.20));
+        finalPrice.innerText = finalPriceValue - (finalPriceValue * 0.20);
         promoInput.value = '';
         promoApply.disabled = true;
 
