@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- TailwindCss CDN -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
+    <!-- Custom Google Font -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Custom style -->
+
+    <style>
+        body {
+            font-family: 'Ubuntu', sans-serif;
+        }
+    </style>
+
+</head>
+
+<body>
+    <main>
+        <section class="container mx-auto flex w-3/4 mb-8">
+
+
+            <!-- MAC IMAGE SECTION -->
+            <div class="m-10">
+                <img class="w-5/6" src="images/mac.png" alt="">
+            </div>
+
+
+            <!-- SPECIFICATION SECTION -->
+
+
+            <div class="mt-10">
+                <!-- Title and Heading paragraph -->
+
+                <h2 class="text-5xl font-bold text-gray-700">Customize your Blue 24-inch iMac with apple M1 cheap.</h2>
+                <p class="text-xl mt-6 mb-10">
+                    This extraordinary design is only possible thanks to M1, the first system on a chip for Mac. It
+                    makes iMac so thin and compact that it fits in more places than ever.
+                </p>
+                <!-- SPEC: MEMORY  -->
+
+                <div class="mb-6">
+                    <h3 class="text-xl font-bold mb-4">Memory</h3>
+                    <button id="memory-type-1"
+                        class="text-xl p-3 bg-gray-200 transition duration-100 ease-in-out hover:bg-gray-700 hover:text-white rounded-2xl mr-2 mb-5">8GB
+                        Unified Memory
+                    </button>
+                    <button id="memory-type-2"
+                        class="transition duration-100 ease-in-out hover:bg-gray-700 hover:text-white text-xl p-3 bg-gray-200 rounded-2xl mr-2 mb-5">16GB
+                        Unified Memory
+                    </button>
+                </div>
+                <!-- SPEC: STORAGE  -->
+
+                <div class="mb-6">
+                    <h3 class="text-xl font-bold mb-4">Storage</h3>
+                    <button id="storage-type-1"
+                        class="transition duration-100 ease-in-out hover:bg-gray-700 hover:text-white text-xl p-3 bg-gray-200 rounded-2xl mr-2 mb-5">256Gb
+                        SSD Storage
+                    </button>
+                    <button id="storage-type-2"
+                        class="transition duration-100 ease-in-out hover:bg-gray-700 hover:text-white text-xl p-3 bg-gray-200 rounded-2xl mr-2 mb-5">512Gb
+                        SSD Storage
+                    </button>
+                    <button id="storage-type-3"
+                        class="transition duration-100 ease-in-out hover:bg-gray-700 hover:text-white text-xl p-3 bg-gray-200 rounded-2xl mr-2 mb-5">1TB
+                        SSD Storage
+                    </button>
+                </div>
+                <!-- DELIVERY OPTIONS  -->
+
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Choose your delivery option</h3>
+                    <button id="delivery-type-1"
+                        class="transition duration-100 ease-in-out hover:bg-gray-700 hover:text-white text-xl p-3 bg-gray-200 rounded-2xl mr-2 mb-5">Wednesday,
+                        Aug 25
+                        FREE Delivery
+                    </button>
+                    <button id="delivery-type-2"
+                        class="transition duration-100 ease-in-out hover:bg-gray-700 hover:text-white text-xl p-3 bg-gray-200 rounded-2xl mr-2 mb-5">Saturday,
+                        Aug 21
+                        Delivery Charge $20
+                    </button>
+                </div>
+
+                <!-- PRICE TABLE -->
+
+                <table class="rounded-t-l w-1/2 mt-10 mb-5 bg-gray-200 text-gray-800">
+
+                    <tr class="bg-white border-b border-gray-200">
+                        <td class="px-4 py-3 text-xl font-bold">Base Price</td>
+                        <td class="px-4 py-3 text-xl font-bold">$ <span id="base-price">1299</span> </td>
+                    </tr>
+                    <!-- each row -->
+                    <tr class="bg-white border-b border-gray-200">
+                        <td class="px-4 py-3 text-xl font-bold">Extra Memory Cost</td>
+                        <td class="px-4 py-3 text-xl font-bold">$ <span id="extra-memory-price">0</span></td>
+                    </tr>
+                    <!-- each row -->
+                    <tr class="bg-white border-b border-gray-200">
+                        <td class="px-4 py-3 text-xl font-bold">Extra Storage Cost</td>
+                        <td class="px-4 py-3 text-xl font-bold">$ <span id="extra-storage-price">0</span></td>
+                    </tr>
+                    <!-- each row -->
+                    <tr class="bg-white border-b border-gray-800">
+                        <td class="px-4 py-3 text-xl font-bold">Delivery Charge</td>
+                        <td class="px-4 py-3 text-xl font-bold">$ <span id="delivery-charge">0</span></td>
+                    </tr>
+                    <!-- each row -->
+                    <tr class="bg-white border-b border-white">
+                        <td class="px-4 py-3 text-xl font-bold">Total Price</td>
+                        <td class="px-4 py-3 text-xl font-bold">$ <span id="total-price">1299</span></td>
+                    </tr>
+                </table>
+
+                <!-- APPLY PROMO CODE SECTION -->
+
+                <div>
+                    <h4 class="text-xl mb-2 ml-2">Apply Promo Code</h4>
+                    <input id="promo-input" class="bg-gray-100 p-3 text-xl" type="text" placeholder="type promo code">
+                    <button id="promo-apply"
+                        class="transition duration-100 ease-in-out hover:bg-red-700 hover:text-white bg-red-600 text-white rounded p-3 text-xl">Apply</button>
+                </div>
+
+
+            </div>
+        </section>
+
+        <hr class="w-3/4 mx-auto">
+
+        <!-- FINAL CALCULATION -->
+
+        <section class="container mx-auto w-3/4 text-center text-5xl font-bold mt-5 mb-9">
+            <h2>Total: $ <span id="final-price">1299</span></h2>
+        </section>
+    </main>
+
+    <!-- JS File -->
+    <script src="js/mac.js"></script>
+</body>
+
+</html>
